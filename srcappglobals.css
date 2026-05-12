@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@300;400&display=swap');
+
+body {
+  @apply bg-geo-black text-geo-white font-body;
+}
+
+/* Barre de progression jaune en haut */
+#nprogress .bar {
+  background: #FFD700 !important;
+}
