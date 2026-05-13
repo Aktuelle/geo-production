@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import ScrollReveal from "./ScrollReveal";
 import { motion } from "framer-motion";
+import Image from 'next/image';
+
 
 interface Project {
   id: number;
@@ -38,7 +40,7 @@ export default function Portfolio() {
         {displayProjects.map((project, index) => (
           <ScrollReveal key={project.id}>
             <div className={`relative group overflow-hidden rounded-2xl ${index === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}>
-              <img src={project.image_url} alt={project.titre} className="w-full h-full object-cover aspect-video" />
+              <Image src={project.image_url} alt={project.titre} className="w-full h-full object-cover aspect-video" />
               <motion.div
                 className="absolute inset-0 bg-geo-black/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >

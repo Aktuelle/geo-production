@@ -16,7 +16,7 @@ export default function Services() {
           <ScrollReveal key={i}>
             <div className="bg-geo-black border border-gray-800 p-8 rounded-2xl hover:border-geo-yellow transition-colors group">
               <div className="w-12 h-12 mb-4 bg-geo-yellow/20 rounded-full flex items-center justify-center">
-                <span className="text-geo-yellow text-2xl">●</span> {/* Icône placeholder */}
+                <span className="text-geo-yellow text-2xl">●</span>
               </div>
               <h3 className="text-xl font-heading font-bold mb-2">{s.title}</h3>
               <p className="text-geo-white/70">{s.description}</p>
