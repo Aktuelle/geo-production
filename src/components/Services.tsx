@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
 
 const services = [
